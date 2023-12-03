@@ -10,9 +10,12 @@ namespace Advent.Puzzles
 
             var lines = FileParser.ReadInputFileAsLines(file);
 
+            // For each line in the file
             foreach (var line in lines)
             {
-                total += GetPlainDigitsFromLine(line);
+                // Add the first and last digits to the total
+                // where digits are only numeric
+                total += GetNumericDigitsFromLine(line);
             }
 
             return total.ToString();
@@ -24,8 +27,11 @@ namespace Advent.Puzzles
 
             var lines = FileParser.ReadInputFileAsLines(file);
 
+            // For each line in the file
             foreach (var line in lines)
             {
+                // Add the first and last digits to the total
+                // including digits that are written as text
                 total += GetAllDigitsFromLine(line);
             }
 
@@ -33,7 +39,7 @@ namespace Advent.Puzzles
         }
 
         // Get the digits from plain numeric values set in the line
-        private static int GetPlainDigitsFromLine(string line)
+        private static int GetNumericDigitsFromLine(string line)
         {
             int firstDigit = -1;
             int lastDigit = -1;
