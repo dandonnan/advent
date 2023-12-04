@@ -8,17 +8,7 @@ namespace Advent
         {
             file = $"day{day}";
 
-            switch (day)
-            {
-                case 1:
-                    return new Puzzle1();
-
-                case 2:
-                    return new Puzzle2();
-
-                default:
-                    return null;
-            }
+            return (IPuzzle)Activator.CreateInstance("Advent", $"Advent.Puzzles.Puzzle{day}").Unwrap();
         }
     }
 }
