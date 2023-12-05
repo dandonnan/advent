@@ -4,7 +4,7 @@ using Advent.Puzzles;
 
 const string solutionFormat = "The solution to the {0} puzzle is {1}.";
 
-int day = 3;
+int day = 4;
 
 IPuzzle puzzle = PuzzleFactory.GetPuzzle(day, out string file);
 

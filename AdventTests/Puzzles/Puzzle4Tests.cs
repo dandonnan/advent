@@ -5,19 +5,19 @@ namespace AdventTests.Puzzles
 {
     [TestFixture]
     [ExcludeFromCodeCoverage]
-    internal class Puzzle3Tests : PuzzleTestBase<Puzzle3>
+    internal class Puzzle4Tests : PuzzleTestBase<Puzzle4>
     {
         [Test]
-        [TestCase("day3_sample", ExpectedResult = "4361")]
-        [TestCase("day3", ExpectedResult = "527446")]
+        [TestCase("day4_sample", ExpectedResult = "13")]
+        [TestCase("day4", ExpectedResult = "21138")]
         public string SolveFirstPuzzle(string file)
         {
             return SolvePuzzle1(file);
         }
 
         [Test]
-        [TestCase("day3_sample", ExpectedResult = "467835")]
-        [TestCase("day3", ExpectedResult = "73201705")]
+        [TestCase("day4_sample", ExpectedResult = "30")]
+        [TestCase("day4", ExpectedResult = "7185540")]
         public string SolveSecondPuzzle(string file)
         {
             return SolvePuzzle2(file);
