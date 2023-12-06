@@ -1,14 +1,16 @@
 ﻿using Advent.IO;
 
-namespace Advent.Puzzles
+namespace Advent.Puzzles._2023
 {
     internal class Puzzle4 : IPuzzle
     {
+        public int Year { get; set; }
+
         public string SolvePuzzle1(string file)
         {
             int points = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             foreach (var line in lines)
             {
@@ -50,7 +52,7 @@ namespace Advent.Puzzles
         {
             int totalCards = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             Dictionary<int, Tuple<int, int>> scratchcardMatches = new Dictionary<int, Tuple<int, int>>();
 

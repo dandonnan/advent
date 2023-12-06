@@ -4,11 +4,15 @@ namespace Advent
 {
     internal class PuzzleFactory
     {
-        public static IPuzzle GetPuzzle(int day, out string file)
+        public static IPuzzle GetPuzzle(int day, int year, out string file)
         {
             file = $"day{day}";
 
-            return (IPuzzle)Activator.CreateInstance("Advent", $"Advent.Puzzles.Puzzle{day}").Unwrap();
+            var puzzle = (IPuzzle)Activator.CreateInstance("Advent", $"Advent.Puzzles._{year}.Puzzle{day}").Unwrap();
+
+            puzzle.Year = year;
+
+            return puzzle;
         }
     }
 }

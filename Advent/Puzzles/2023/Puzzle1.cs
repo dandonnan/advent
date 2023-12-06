@@ -1,14 +1,16 @@
 ﻿using Advent.IO;
 
-namespace Advent.Puzzles
+namespace Advent.Puzzles._2023
 {
     internal class Puzzle1 : IPuzzle
     {
+        public int Year { get; set; }
+
         public string SolvePuzzle1(string file)
         {
             int total = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             // For each line in the file
             foreach (var line in lines)
@@ -25,7 +27,7 @@ namespace Advent.Puzzles
         {
             int total = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             // For each line in the file
             foreach (var line in lines)

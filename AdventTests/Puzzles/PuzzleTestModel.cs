@@ -21,7 +21,7 @@ namespace AdventTests.Puzzles
 
         public override string ToString()
         {
-            return InputFile;
+            return $"{InputFile} ({Puzzle.Year})";
         }
     }
 }

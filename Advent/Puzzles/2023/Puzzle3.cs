@@ -1,14 +1,16 @@
 ﻿using Advent.IO;
 
-namespace Advent.Puzzles
+namespace Advent.Puzzles._2023
 {
     internal class Puzzle3 : IPuzzle
     {
+        public int Year { get; set; }
+
         public string SolvePuzzle1(string file)
         {
             int total = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             List<Schematic> schematics = new List<Schematic>();
 
@@ -58,7 +60,7 @@ namespace Advent.Puzzles
         {
             int total = 0;
 
-            var lines = FileParser.ReadInputFileAsLines(file);
+            var lines = FileParser.ReadInputFileAsLines(file, Year);
 
             List<Schematic> schematics = new List<Schematic>();
 

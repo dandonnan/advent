@@ -45,23 +45,43 @@ namespace AdventTests.Puzzles
         {
             return new List<PuzzleTestModel>
             {
+                // 2023
+
                 // Samples
-                CreateTestModel(1, "142", "281", true, true),
-                CreateTestModel(2, "8", "2286", true),
-                CreateTestModel(3, "4361", "467835", true),
-                CreateTestModel(4, "13", "30", true),
+                CreateTestModel(1, 2023, "142", "281", true, true),
+                CreateTestModel(2, 2023, "8", "2286", true),
+                CreateTestModel(3, 2023, "4361", "467835", true),
+                CreateTestModel(4, 2023, "13", "30", true),
 
                 // Puzzles
-                CreateTestModel(1, "54632", "54019"),
-                CreateTestModel(2, "2685", "83707"),
-                CreateTestModel(3, "527446", "73201705"),
-                CreateTestModel(4, "21138", "7185540")
+                CreateTestModel(1, 2023, "54632", "54019"),
+                CreateTestModel(2, 2023, "2685", "83707"),
+                CreateTestModel(3, 2023, "527446", "73201705"),
+                CreateTestModel(4, 2023, "21138", "7185540"),
+
+                // 2022
+
+                // Samples
+                CreateTestModel(1, 2022, "24000", "45000", true),
+                CreateTestModel(2, 2022, "15", "12", true),
+                CreateTestModel(3, 2022, "157", "70", true),
+                CreateTestModel(4, 2022, "2", "4", true),
+                CreateTestModel(5, 2022, "CMZ", "MCD", true),
+                // todo: add support for more than 2 sample files
+
+                // Puzzles
+                CreateTestModel(1, 2022, "66719", "198551"),
+                CreateTestModel(2, 2022, "10624", "14060"),
+                CreateTestModel(3, 2022, "8018", "2518"),
+                CreateTestModel(4, 2022, "515", "883"),
+                CreateTestModel(5, 2022, "SBPQRSCDF", "RGLVRCQSB"),
+                CreateTestModel(6, 2022, "1566", "2265"),
             };
         }
 
-        private static PuzzleTestModel CreateTestModel(int day, string expectedResult1, string expectedResult2, bool sample = false, bool splitInputs = false)
+        private static PuzzleTestModel CreateTestModel(int day, int year, string expectedResult1, string expectedResult2, bool sample = false, bool splitInputs = false)
         {
-            var puzzle = PuzzleFactory.GetPuzzle(day, out string file);
+            var puzzle = PuzzleFactory.GetPuzzle(day, year, out string file);
 
             return new PuzzleTestModel
             {

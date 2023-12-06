@@ -2,9 +2,9 @@
 {
     internal class FileParser
     {
-        public static string ReadInputFile(string fileName)
+        public static string ReadInputFile(string fileName, int year)
         {
-            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{fileName}.txt";
+            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{year}//{fileName}.txt";
 
             using (StreamReader streamReader = new StreamReader(file))
             {
@@ -12,11 +12,11 @@
             }
         }
 
-        public static List<string> ReadInputFileAsLines(string fileName)
+        public static List<string> ReadInputFileAsLines(string fileName, int year)
         {
             List<string> lines = new List<string>();
 
-            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{fileName}.txt";
+            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{year}//{fileName}.txt";
 
             using (StreamReader streamReader = new StreamReader(file))
             {
