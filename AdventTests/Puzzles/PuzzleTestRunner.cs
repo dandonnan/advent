@@ -52,12 +52,14 @@ namespace AdventTests.Puzzles
                 CreateTestModel(2, 2023, "8", "2286", true),
                 CreateTestModel(3, 2023, "4361", "467835", true),
                 CreateTestModel(4, 2023, "13", "30", true),
+                CreateTestModel(6, 2023, "288", "71503", true),
 
                 // Puzzles
                 CreateTestModel(1, 2023, "54632", "54019"),
                 CreateTestModel(2, 2023, "2685", "83707"),
                 CreateTestModel(3, 2023, "527446", "73201705"),
                 CreateTestModel(4, 2023, "21138", "7185540"),
+                CreateTestModel(6, 2023, "345015", "42588603"),
 
                 // 2022
 
