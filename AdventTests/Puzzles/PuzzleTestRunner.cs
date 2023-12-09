@@ -21,7 +21,7 @@ namespace AdventTests.Puzzles
             }
 
             // Test that the solution to the first puzzle matches the expected result
-            Assert.That(test.Puzzle1ExpectedResult, Is.EqualTo(test.Puzzle.SolvePuzzle1(testFile)));
+            Assert.That(test.Puzzle.SolvePuzzle1(testFile), Is.EqualTo(test.Puzzle1ExpectedResult));
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace AdventTests.Puzzles
             }
 
             // Test that the solution to the second puzzle matches the expected result
-            Assert.That(test.Puzzle2ExpectedResult, Is.EqualTo(test.Puzzle.SolvePuzzle2(testFile)));
+            Assert.That(test.Puzzle.SolvePuzzle2(testFile), Is.EqualTo(test.Puzzle2ExpectedResult));
         }
 
         // A list of tests to run with their expected inputs
