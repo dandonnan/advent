@@ -45,6 +45,14 @@ namespace AdventTests.Puzzles
         {
             return new List<PuzzleTestModel>
             {
+                // 2024
+
+                // Samples
+                CreateTestModel(1, 2024, "11", "31", true),
+
+                // Puzzles
+                CreateTestModel(1, 2024, "2086478", "24941624"),
+
                 // 2023
 
                 // Samples

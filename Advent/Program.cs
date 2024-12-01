@@ -4,9 +4,9 @@ using Advent.Puzzles;
 
 const string solutionFormat = "The solution to the {0} puzzle is {1}.";
 
-int day = 6;
+int day = 1;
 
-int year = 2023;
+int year = 2024;
 
 IPuzzle puzzle = PuzzleFactory.GetPuzzle(day, year, out string file);
 
