@@ -50,10 +50,14 @@ namespace AdventTests.Puzzles
                 // Samples
                 CreateTestModel(1, 2024, "11", "31", true),
                 CreateTestModel(2, 2024, "2", "4", true),
+                CreateTestModel(3, 2024, "161", "", true),
+                CreateTestModel(4, 2024, "18", "", true),
 
                 // Puzzles
                 CreateTestModel(1, 2024, "2086478", "24941624"),
                 CreateTestModel(2, 2024, "257", "328"),
+                CreateTestModel(3, 2024, "170778545", ""),
+                CreateTestModel(4, 2024, "", ""),
 
                 // 2023
 
